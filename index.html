@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AudioVerse | Your daily dose of awesome</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="division">
+      <section>
+        <div>
+          <nav class="company">
+            <a href="#" class="side">
+              <img
+                src="AudioVerse Logo.png"
+                alt="player_logo"
+                class="logo"
+                width="60px"
+              />
+            </a>
+            <a href="#" class="side music dis">AudioVerse</a>
+          </nav>
+        </div>
+        <div>
+          <p><i class="fa-solid fa-bars"></i>Menu</p>
+          <nav>
+            <a href="#" class="side dis"><i class="fa-solid fa-guitar"></i></a>
+            <a href="#" class="side">Genres</a>
+          </nav>
+          <nav>
+            <a href="#" class="side dis"
+              ><i class="fa-solid fa-user-large"></i
+            ></a>
+            <a href="#" class="side">Artists</a>
+          </nav>
+          <nav>
+            <a href="#" class="side dis"><i class="fa-solid fa-radio"></i></a>
+            <a href="#" class="side">Radio</a>
+          </nav>
+          <nav>
+            <a href="#" class="side dis"
+              ><i class="fa-solid fa-rotate-right"></i
+            ></a>
+            <a href="#" class="side">Recent</a>
+          </nav>
+          <nav>
+            <a href="#" class="side dis"
+              ><i class="fa-solid fa-headphones"></i
+            ></a>
+            <a href="#" class="side">Favourites</a>
+          </nav>
+          <nav>
+            <a href="#" class="side dis"><i class="fa-solid fa-music"></i></a>
+            <a href="#" class="side">My Playlist</a>
+          </nav>
+        </div>
+        <div class="container">
+          <img
+            src="artist3.png"
+            alt="Espresso"
+            class="thumbnail"
+            id="bannerImage"
+          />
+          <h1 class="banner" id="playerSong">Espresso</h1>
+          <p class="banner" id="playerArtist">Sabrina Carpenter</p>
+          <input type="range" value="0" id="progress" />
+          <div>
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+          </div>
+          <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()">
+              <i class="fa-solid fa-play" id="ctrlIcon"></i>
+            </div>
+            <div onclick="forward()">
+              <i class="fa-solid fa-forward" id="ctrlForward"></i>
+            </div>
+          <audio id="song">
+            <source
+              id="playerMusic"
+              src="Sabrina_Carpenter_-_Espresso_@BaseNaija.mp3"
+              type="audio/mpeg"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <span class="content-header">
+          <div>
+            <i class="fa-solid fa-magnifying-glass"></i
+            ><input type="text" placeholder="Search" class="search" />
+          </div>
+          <div>
+            <input type="button" value="Sign Up" class="search btn" />
+            <input type="button" value="Sign In" class="search btn" />
+          </div>
+        </span>
+        <p>Top Songs</p>
+        <span class="songs">
+          <div>
+            <a href="#" class="side">
+              <img
+                src="artist3.png"
+                alt="Espresso"
+                class="song-img"
+                id="song1"
+              />
+              <p class="side">Espresso</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img
+                src="romance.png"
+                alt="Pehle Bhi Main"
+                class="song-img"
+                id="song2"
+              />
+              <p class="side">Pehle Bhi Main</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img
+                src="motivational.png"
+                alt="Tu Hai Champion"
+                class="song-img"
+                id="song3"
+              />
+              <p class="side">Tu Hai Champion</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img
+                src="artist6.png"
+                alt="The Box"
+                class="song-img"
+                id="song4"
+              />
+              <p class="side">The Box</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img
+                src="kpop.png"
+                alt="Never Let Go"
+                class="song-img"
+                id="song5"
+              />
+              <p class="side">Never Let Go</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img
+                src="artist8.png"
+                alt="Perdido"
+                class="song-img"
+                id="song6"
+              />
+              <p class="side">Perdido</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img src="artist7.png" alt="28" class="song-img" id="song7" />
+              <p class="side">28</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img
+                src="artist5.png"
+                alt="Collblanc"
+                class="song-img"
+                id="song8"
+              />
+              <p class="side">Collblanc</p>
+            </a>
+          </div>
+        </span>
+        <p>Genres</p>
+        <span class="genres">
+          <div>
+            <input type="button" value="Global" class="button1" />
+          </div>
+          <div>
+            <input type="button" value="Romance" class="button2" />
+          </div>
+          <div>
+            <input type="button" value="Motivational" class="button3" />
+          </div>
+          <div>
+            <input type="button" value="Hip Hop" class="button4" />
+          </div>
+          <div>
+            <input type="button" value="K-Pop" class="button5" />
+          </div>
+          <div>
+            <input type="button" value="Rock" class="button6" />
+          </div>
+          <div>
+            <input type="button" value="Country" class="button7" />
+          </div>
+          <div>
+            <input type="button" value="Jazz" class="button8" />
+          </div>
+        </span>
+        <p>Top Artists</p>
+        <span class="artists">
+          <div>
+            <a href="#" class="side">
+              <img src="artist1.png" alt="Arijit Singh" class="artist-img" />
+              <p>Arijit Singh</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img src="artist2.png" alt="Roddy Ricch" class="artist-img" />
+              <p>Roddy Ricch</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img
+                src="artist3.png"
+                alt="Sabrina Carpenter"
+                class="artist-img"
+              />
+              <p>Sabrina Carpenter</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img src="artist4.png" alt="Vishal Mishra" class="artist-img" />
+              <p>Vishal Mishra</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="side">
+              <img src="artist5.png" alt="Joe Webb" class="artist-img" />
+              <p>Joe Webb</p>
+            </a>
+          </div>
+        </span>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

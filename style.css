@@ -1,0 +1,209 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+a:hover {
+  color: purple;
+}
+
+.division {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.side {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+}
+
+.dis:hover {
+  display: none;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: purple;
+  color: white;
+  font-weight: bold;
+}
+
+.banner {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.music {
+  padding-left: 20px;
+  font-size: 35px;
+}
+
+.current-time {
+  margin-right: 180px;
+}
+
+.content-header {
+  display: flex;
+  gap: 825px;
+}
+
+.search {
+  border: 2px solid purple;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.songs {
+  border: 2px solid purple;
+  border-radius: 10px;
+  display: flex;
+  gap: 45px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.song-img {
+  width: 100px;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.genres {
+  border: 2px solid purple;
+  border-radius: 10px;
+  display: flex;
+}
+
+.button1 {
+  margin: 20px;
+  padding: 30px;
+  background-image: linear-gradient(to right, blue, rgb(0, 255, 213));
+}
+.button2 {
+  margin: 20px;
+  padding: 30px;
+  background-image: linear-gradient(to left, pink, rgb(255, 0, 230));
+}
+.button3 {
+  margin: 20px;
+  padding: 30px;
+  background-image: linear-gradient(to right, red, yellow);
+}
+.button4 {
+  margin: 20px;
+  padding: 30px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 204, 0),
+    rgb(0, 255, 195)
+  );
+}
+.button5 {
+  margin: 20px;
+  padding: 30px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 123, 0),
+    rgb(255, 213, 0)
+  );
+}
+.button6 {
+  margin: 20px;
+  padding: 30px;
+  background-image: linear-gradient(to right, brown, rgb(255, 0, 89));
+}
+.button7 {
+  margin: 20px;
+  padding: 30px;
+  background-image: linear-gradient(to right, green, rgb(169, 240, 220));
+}
+.button8 {
+  margin: 20px;
+  padding: 30px;
+  background-image: linear-gradient(
+    to right,
+    rgb(191, 255, 0),
+    rgb(0, 174, 255)
+  );
+}
+
+.artists {
+  border: 2px solid purple;
+  border-radius: 10px;
+  display: flex;
+  gap: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.artist-img {
+  width: 130px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border: 1px solid black;
+  border-radius: 100px;
+}
+
+.container {
+  background-color: black;
+  text-align: center;
+}
+
+.thumbnail {
+  margin-top: 40px;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 200px;
+  box-shadow: 0px 10px 60px rgb(255, 0, 89);
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background-color: purple;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0px 2px 2px rgb(0, 255, 195);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls div {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.5);
+  background: purple;
+  color: white;
+}
